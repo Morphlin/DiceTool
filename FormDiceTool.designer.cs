@@ -56,6 +56,7 @@
             this.WorkerSaveDiceTool = new System.ComponentModel.BackgroundWorker();
             this.ToolTipDiceTool = new System.Windows.Forms.ToolTip(this.components);
             this.TableLayoutDiceTool = new System.Windows.Forms.TableLayoutPanel();
+            this.ColumnIcon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ContextMenuStripDiceTool.SuspendLayout();
             this.TableLayoutDiceTool.SuspendLayout();
             this.SuspendLayout();
@@ -163,6 +164,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ListViewRolls.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnIcon,
             this.ColumnTicks,
             this.ColumnDateTime,
             this.ColumnDiceType,
@@ -183,12 +185,12 @@
             // ColumnTicks
             // 
             this.ColumnTicks.Text = "";
-            this.ColumnTicks.Width = 25;
+            this.ColumnTicks.Width = 0;
             // 
             // ColumnDateTime
             // 
             this.ColumnDateTime.Text = "Moment";
-            this.ColumnDateTime.Width = 115;
+            this.ColumnDateTime.Width = 140;
             // 
             // ColumnDiceType
             // 
@@ -346,6 +348,11 @@
             this.TableLayoutDiceTool.TabIndex = 15;
             this.TableLayoutDiceTool.SizeChanged += new System.EventHandler(this.TableLayoutDiceTool_SizeChanged);
             // 
+            // ColumnIcon
+            // 
+            this.ColumnIcon.Text = "";
+            this.ColumnIcon.Width = 25;
+            // 
             // FormDiceTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,6 +403,7 @@
         private System.Windows.Forms.ColumnHeader ColumnTicks;
         private System.Windows.Forms.ContextMenuStrip ContextMenuStripDiceTool;
         private System.Windows.Forms.ToolStripComboBox ToolStripComboBoxDiceTool;
+        private System.Windows.Forms.ColumnHeader ColumnIcon;
     }
 }
 
