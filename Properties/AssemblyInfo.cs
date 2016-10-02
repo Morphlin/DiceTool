@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Dice Tool")]
 [assembly: AssemblyCopyright("Copyright © Gartech 2015")]
-[assembly: AssemblyTrademark("2013-06-16")]
+[assembly: AssemblyTrademark("2015-09-10")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
